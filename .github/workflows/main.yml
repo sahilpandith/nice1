@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: Run second step
+        run: echo "Hello from second step"
 #       - name: Run a multi-line script
 #         run: |
 #           echo Add other actions to build,
