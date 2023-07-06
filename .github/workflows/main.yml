@@ -29,4 +29,14 @@ jobs:
         run: |
           sleep 20
           echo "Hello from second step"
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: Run second step
+        run: |
+          sleep 20
+          echo "Hello from second step"
 
