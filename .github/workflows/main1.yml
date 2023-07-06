@@ -16,6 +16,6 @@ jobs:
         run: |
           echo "Windows"
       - name : condition 2
-        if: runner.os=='!Windows'
+        if: runner.os!='Windows'
         run : |
           echo 'Linux'
