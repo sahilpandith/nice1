@@ -11,7 +11,12 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       - name: Run second step
-        run: echo "Hello from second step"
+        run: |
+          echo "Hello from second step"
+      - name : run multiple steps
+        run : |
+          touch sahil.txt
+          ls -l
 #       - name: Run a multi-line script
 #         run: |
 #           echo Add other actions to build,
