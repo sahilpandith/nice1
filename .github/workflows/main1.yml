@@ -1,4 +1,4 @@
-name: CI
+name: main2
 on:
   push:
     branches: [ "main" ]
