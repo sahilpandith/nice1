@@ -1,0 +1,21 @@
+name: CI
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: condition 1
+        if: runner.os=='Windows'
+        run: |
+          echo "Windows"
+      - name : condition 2
+        if: runner.os=='!Windows'
+        run : |
+          echo 'Linux'
